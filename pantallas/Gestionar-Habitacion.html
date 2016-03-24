@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Documento sin t&iacute;tulo</title>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+  <h3>Gestionar Habitaci&oacute;n</h3>
+  <p>
+    <label>C&oacute;digo
+    <input type="text" name="textfield" />
+    </label>
+</p>
+  <p>
+    <label>Descripción
+    <input type="text" name="textfield2" />
+    </label>
+  </p>
+  <p>
+    <label>Tipos de habitación
+    
+    <select name="menu1" size="1" onchange="MM_jumpMenu('parent',this,0)">
+      <option>Seleccione</option>
+    </select>
+    </label>
+    <input name="nombre" type="text" id="nombre" size="15" />
+  </p>
+  <p>
+    <select name="Estatus" onchange="MM_jumpMenu('parent',this,0)">
+      <option>Seleccione:</option>
+      <option>Disponible</option>
+      <option>Ocupada</option>
+      <option>Mantenimiento</option>
+    </select>
+  </p>
+  <p>
+    <label>
+    <input type="submit" name="Submit" value="Consultar" />
+    </label>
+    <label>
+    <input type="submit" name="Submit2" value="Registrar" />
+    </label>
+    <label>
+    <input type="submit" name="Submit3" value="Modificar" />
+    </label>
+    <label>
+    <input type="submit" name="Submit4" value="Eliminar" />
+    </label>
+  </p>
+</form>
+</body>
+</html>

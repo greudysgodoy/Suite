@@ -1,18 +1,18 @@
 @extends('templates.templateGerente')
 
 @section('content')
-<!-- <div class="panel panel-default">
-	<div class="panel-heading"> 
-		<h3> <b>Reservaciones</b>  </h3>
-	</div>
- 			<div class="panel-body"> -->
-
-				<div class="row">
-			  		<div class="col-lg-12 col-md-8 col-sm-6 col-xs-6">
-			  			<div class="contenedor-formulario">
-			  			<div style="max-width: 1500px" class="wrap">
-				  			<form class="formulario" name="formularios" method="post" >
-				  			<h3 align="center"><b>Reservacion</b></h3>
+<div class="col-lg-12 col-md-8 col-sm-6 col-xs-6"  align="center">	
+	<div class="panel panel-default" style="width: 70%">
+		<div class="panel-heading" > 
+			<<h3 align="center"><b>Reservacion</b></h3>
+		</div>
+	 		<div class="panel-body">
+				<div class="col-lg-12 col-md-8 col-sm-6 col-xs-6" >		
+					<div class="row">
+						<div class="contenedor-formulario">
+						<br><br>				
+								<form class="formulario" name="formularios" method="post">
+									
 				  				  <br><br>
 								  <div class="left2" >
 								 	 <div class="panel panel-default">
@@ -39,8 +39,8 @@
 								  		</div>
 								  		<div class="panel-body">
 								  			<div class="input-group">										
-												<input type="text" id="cedula" name="txtCedula" placeholder="Ejemplo: V-21244015">
-												<label class="label" for="cedula">Cedula:</label>							
+												<input type="text" id="cedula" name="txtCedula">
+												<label class="label" for="cedula">Cédula:</label>							
 											</div>
 											<div class="input-group">
 												<input type="text" id="nombre" name="txtNombre">
@@ -52,7 +52,7 @@
 								  <div class="left2" >
 								  	<div class="panel panel-default">
 								  		<div class="panel-heading">
-								  			<h4>Cantidad de huespedes</h4>
+								  			<h4>Cantidad de huespédes</h4>
 								  		</div>	
 								  		<div class="panel-body">
 								  			<div class="input-group">										
@@ -90,12 +90,12 @@
 								 <div class="left2" >
 								 	<div class="panel panel-default">
 								  		<div class="panel-heading">
-								  			<h4>Huespedes</h4>
+								  			<h4>Registrod de Huespédes</h4>
 								  		</div>	
 								  		<div class="panel-body">
 								  			<div class="input-group">
-												<input type="text" id="cedulaHuesped" name="txtCedulaHuesped" placeholder="Ejemplo: V-21244015">
-												<label class="label" for="cedulaHuesped">Cedula:</label>					
+												<input type="text" id="cedulaHuesped" name="txtCedulaHuesped" >
+												<label class="label" for="cedulaHuesped">Cédula:</label>					
 											</div>
 											<div class="input-group">
 												<input type="text" id="nombreHuesped" name="txtNombreHuesped">
@@ -143,11 +143,12 @@
 									<div> 
 										<input style="width: 25%" type="reset" name="btn_cancelar" value="Cancelar">
 										<input style="width: 25%; margin-top: 200px" type="submit" name="btn_aceptar" value="Aceptar">			
-									</div>						
-				       		</form>
-				       		</div>
-				       	</div>
+									</div>	
+				  				</form>					
+						</div>
 					</div>
-				</div>	
-				<!--fin de la Parte interna del panel-->
+				</div>
+			</div>
+		</div>
+	</div>
 @stop

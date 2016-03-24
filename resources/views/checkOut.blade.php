@@ -33,7 +33,7 @@
 										</div>
 									</div><br><br><br>
 										<input id="btn-reset" type="reset" value="Cancelar">
-										<input id="btn-submit" type="submit" value="Guardar">									
+										<input id="btn-submit" type="submit" value="Procesar">									
 								</form>	
 							</div>
 							 

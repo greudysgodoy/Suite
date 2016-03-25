@@ -48,6 +48,7 @@ Route::get('reporteIngresos','controladorVistas@reporteIngresos');
 Route::get('inicio','controladorVistas@inicio');
 
 
+
 //controlador servicios
 Route::get('registroServicio','controladorServicio@index');
 Route::resource('servicio','controladorServicio');
@@ -61,12 +62,8 @@ Route::resource('tipoHabitacion','controladorTipoHabitacion');
 Route::get('registroHabitacion','controladorHabitacion@index');
 Route::resource('habitacion','controladorHabitacion');
 
-<<<<<<< HEAD
-Route::resource('habitacion','controladorHabitacion');
-
+//controlador de no se que es pero estan dando conflicto
 Route::resource('cliente','controladorCliente@create');
 
 Route::resource('usuario','controladorUsuario@create');
 
-=======
->>>>>>> origin/master

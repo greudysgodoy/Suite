@@ -4,7 +4,7 @@
 <div class="col-lg-12 col-md-8 col-sm-6 col-xs-6"  align="center">	
 	<div class="panel panel-default" style="width: 70%">
 		<div class="panel-heading" > 
-			<<h3 align="center"><b>Reservacion</b></h3>
+			<h4 align="center"><B>Reservación</B></h4>
 		</div>
 	 		<div class="panel-body">
 				<div class="col-lg-12 col-md-8 col-sm-6 col-xs-6" >		

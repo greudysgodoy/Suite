@@ -16,14 +16,27 @@
  
  		 {!!Html::style('css/estilos.css')!!}   
 
+<<<<<<< HEAD
  		 {!!Html::style('css/fuentes.css')!!} 		 		 
+=======
+ 		 {!!Html::style('css/fuentes.css')!!}  -->  		 		 
+>>>>>>> origin/master
 		
 
 		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
 
+<<<<<<< HEAD
 		<link rel="stylesheet" type="text/css" href="css/fuentes.css"/>--> 
+=======
+		<link rel="stylesheet" type="text/css" href="css/fuentes.css"/> 
+
+		<link rel="stylesheet" href="fonts.css">
+		
+
+		
+>>>>>>> origin/master
 		
 
 
@@ -184,6 +197,23 @@
 		 </div>
 	 </div>
 	 <!--Fin de la barra lateral-->	
+
+<!--Iconos lateral-->
+
+<div class="social">
+<ul>
+		<li><a href="#" target="_blank" class="icon-facebook"></a></li>
+		<li><a href="#" target="_blank" class="icon-twitter"></a></li>
+		<li><a href="#" target="_blank" class="icon-google"></a></li>
+		<li><a href="#" target="_blank" class="icon-pinterest"></a></li>
+		<li><a href="#" target="_blank" class="icon-mail"></a></li>
+
+</ul>
+	
+</div>
+
+<!--fin de Iconos lateral-->
+
 	
 	<div class="container-body">
 		@yield('content')

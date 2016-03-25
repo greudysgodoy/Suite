@@ -186,6 +186,7 @@
 	 <!--Fin de la barra lateral-->	
 	
 	<div class="container-body">
+		@yield('content')
 	</div>
 
 	

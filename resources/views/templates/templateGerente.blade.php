@@ -12,18 +12,18 @@
 
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0,minimun-scale=1.0">
 
-		<!-- {!!Html::style('css/bootstrap.css')!!}   
+		 {!!Html::style('css/bootstrap.css')!!}   
  
  		 {!!Html::style('css/estilos.css')!!}   
 
- 		 {!!Html::style('css/fuentes.css')!!} -->   		 		 
+ 		 {!!Html::style('css/fuentes.css')!!} 		 		 
 		
 
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
 
-		<link rel="stylesheet" type="text/css" href="css/fuentes.css"/> 
+		<link rel="stylesheet" type="text/css" href="css/fuentes.css"/>--> 
 		
 
 
@@ -67,11 +67,11 @@
 									Registros <spam class="caret"> </spam>
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="registroCliente">Clientes</a></li>														 
+									<li><a href="cliente">Clientes</a></li>												 
 								    <li><a href="registroServicio">Servicios</a></li>
 								    <li><a href="registroHabitacion">Habitación</a></li>
 									<li><a href="registroTipoHabitacion">Tipo de habitación</a></li>
-									<li><a href="registroUsuario">Usuario</a></li>
+									<li><a href="usuario">Usuario</a></li>
 								</ul>
 							</li>							
 
@@ -190,14 +190,17 @@
 	</div>
 
 	
-	<!--{!!Html::script('../../../public/js/jquery.js')!!}
-	{!!Html::script('../../../public/js/bootstrap.min.js')!!}-->
+	{!!Html::script('js/jquery.js')!!}
+	{!!Html::script('js/bootstrap.min.js')!!}
+	{!!Html::script('js/formulario.js')!!}
+	{!!Html::script('http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')!!}
+	{!!Html::script('js/script.js')!!}	
 
-	<script src="js/jquery.js"></script>
+	<!--<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/formulario.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>-->
 
 	<br>
 	<br>

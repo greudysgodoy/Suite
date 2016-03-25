@@ -10,8 +10,9 @@
 				<div class="col-lg-12 col-md-8 col-sm-6 col-xs-6" >		
 					<div class="row">
 						<div class="contenedor-formulario">
-						<br><br>				
-								<form class="formulario" name="formularios" method="post">
+						<br><br>
+				{!!Form::open(['route'=>'cliente.store','method'=>'post','class'=>'formulario','name'=>'formularios'])!!}				
+								<!--<form class="formulario" name="formularios" method="post" route="cliente.sotore">-->
 									<div>
 										<div  class="left">
 											<div  class="input-group">	
@@ -26,12 +27,13 @@
 												<input type="text" id="apellido" name="txtApellido">
 												<label class="label" for="apellido">Apellido</label>					
 											</div>											
+						   				</div>
+
+						   				<div class="right">
 											<div class="input-group">							
 								   				<input type="date" id="nacimiento" name="fechaNacimiento">
 								   				<label class="label" for="edad">Fecha de nacimiento</label>
-								   			</div>	
-						   				</div>
-						   				<div class="right">
+								   			</div>							   				
 						   					<div class="input-group">			   				
 												<input type="text" id="telefono" name="txtTelefono">
 												<label class="label" for="telefono">Teléfono</label>
@@ -39,21 +41,13 @@
 											<div class="input-group">							
 												<input type="email" name="email">
 												<label class="label" for="email">Correo</label>
-											</div>	
-											<div class="input-group">							
-												<input type="password" id="repetirClave" name="clave">
-												<label class="label" for="clave">Contraseña</label>
-											</div>
-											<div class="input-group">
-												<input type="password" id="repetirClave" name="txtRepetirClave">
-												<label class="label" for="repetirClave">Repita la contraseña</label>						
 											</div>											
-										</div>	
-										
+										</div>									
 										<input type="reset" value="Cancelar">
-					  				 	<input type="submit" value="Aceptar">  
+					  				 	<input type="submit" name="btnAceptar" value="Aceptar">  
 				  				 	</div>
-				  				</form>					
+				  				 {!!Form::close()!!}	
+				  				<!--</form>-->					
 						</div>
 					</div>
 				</div>

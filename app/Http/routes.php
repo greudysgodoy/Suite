@@ -49,4 +49,9 @@ Route::get('inicio','controladorVistas@inicio');
 
 
 
-//Route::resource('habitacion','controladorHabitacion');
+Route::resource('habitacion','controladorHabitacion');
+
+Route::resource('cliente','controladorCliente@create');
+
+Route::resource('usuario','controladorUsuario@create');
+

@@ -36,13 +36,13 @@
   };
 
   var validarRadios = function() {
-    var opciones = document.getElementsByName('tipo'),
+    var opciones = document.getElementsByName('radioRol'),
       resultado = false;
 
     for (var i = 0; i < elementos.length; i++) {
-      if (elementos[i].type == "radio" && elementos[i].name == "tipo") {
+      if (elementos[i].type == "radio" && elementos[i].name == "radioRol") {
         // Recorremos los radio button
-        for (var o = 0; o < opciones.length; o++) {
+        for (var o = 0; o < opciones; o++) {
           if (opciones[o].checked) {
             resultado = true;
             break;

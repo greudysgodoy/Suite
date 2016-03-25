@@ -3,7 +3,7 @@
 <div align="center">  
   <div class="panel panel-default" style="width: 40%">
     <div class="panel-heading" > 
-      <h4 align="center"> <B>Carlos es gay</B> </h4>
+      <h4 align="center"> <B>Inicio de Sesión</B> </h4>
     </div>
       <div class="panel-body">
         <div class="col-lg-12 col-md-8 col-sm-6 col-xs-6" >   

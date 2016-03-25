@@ -20,7 +20,8 @@
 							<label class="label" for="contraseña">Contraseña</label>				
 						</div>
 						<input id="btn-submit" type="submit" value="Iniciar">
-						<input id="btn-regis" type="submit" value="Registrar">			  		
+						<a id="btn-regis" href="#" >Registrar</a>
+            	  		
 					</div>
                 </form>
                 </div>

@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\habitacion;
+use App\tipohabitacion;
+use Session;
+use Redirect;
+
 class controladorHabitacion extends Controller
 {
     /**
@@ -15,7 +20,8 @@ class controladorHabitacion extends Controller
      */
     public function index()
     {
-        //
+        $tipohabitacions = tipohabitacion::lists('descripcion','codigo');
+        return view('registroHabitacion',compact('tipohabitacions'));
     }
 
     /**
@@ -36,7 +42,14 @@ class controladorHabitacion extends Controller
      */
     public function store(Request $request)
     {
-        //
+            habitacion::create([
+            'descripcion' => $request['descripcion'],
+            'codigoTipoHabitacion' => $request['codigo'],
+            'estatus' => 'D',
+            ]);
+
+        Session::flash('message-success','Habitacion registrada exitosamente');
+        return Redirect::to('registroHabitacion');
     }
 
     /**

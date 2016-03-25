@@ -10,34 +10,23 @@
 				<div class="col-lg-12 col-md-8 col-sm-6 col-xs-6" >	  
 					<div class="row">
 						<div class="contenedor-formulario">
-								<form class="formulario" name="formularios" method="post">
+								<{!!Form::open(['route'=>'habitacion.store', 'method'=>'POST','name' => 'formularios', 'class'=>'formulario'])!!}
 									<div>
-								  		<div  class="input-group">  				 	
-											<input type="text" id="codigoHab" name="codigoHab">
-											<label class="label" for="codigoHab">Codigo Habitación</label>
-										</div>
 										<div  class="input-group">  				 	
-											<input type="text" id="descripcion" name="descripcion">
+											<input type="text"  name="descripcion">
 											<label class="label" for="descripcion">Descripción Habitación</label>
 										</div>
 										<div class="input-group">
-											<select>
-												<option></option>
-												<option>Duplex</option>
-												<option>Triple sencilla</option>
-												<option>Matrimonial</option>
-												<option>Suite presidencial</option>
-											</select>
+											<div class="form-group">
+												{!!Form::label('Tipo:')!!}
+												{!!Form::select('codigo',$tipohabitacions)!!}
+											</div
 											<label class="label" for="tipoHab">Tipo de Habitacion</label>		
 										</div>
-										<div  class="input-group">  				 	
-											<input type="text" id="precio" name="precio">
-											<label class="label" for="precio">Precio Habitación</label>
-										</div>
-										<input id="btn-reset" type="reset" value="Cancelar">
+									
 								  		<input id="btn-submit" type="submit" value="Aceptar">
 									</div>
-							 	</form>
+							 	{!!Form::close()!!}
 						</div>
 					</div>
 				</div>

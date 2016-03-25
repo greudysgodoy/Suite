@@ -5,9 +5,9 @@ Route::get('/', 'controladorVistas@index');
 
 Route::get('checkOut','controladorVistas@checkOut');
 
-Route::get('registroHabitacion','controladorVistas@registroHabitacion');
+//Route::get('registroHabitacion','controladorVistas@registroHabitacion');
 
-Route::get('registroTipoHabitacion','controladorVistas@registroTipoHabitacion');
+//Route::get('registroTipoHabitacion','controladorVistas@registroTipoHabitacion');
 
 Route::get('checkIn','controladorVistas@checkIn');
 
@@ -21,7 +21,7 @@ Route::get('reservacion','controladorVistas@reservacion');
 
 Route::get('reporteReservacion','controladorVistas@reporteReservacion');
 
-Route::get('registroServicio','controladorVistas@registroServicio');
+//Route::get('registroServicio','controladorVistas@registroServicio');
 
 Route::get('contacto', 'controladorVistas@contacto');
 
@@ -48,5 +48,16 @@ Route::get('reporteIngresos','controladorVistas@reporteIngresos');
 Route::get('inicio','controladorVistas@inicio');
 
 
+//controlador servicios
+Route::get('registroServicio','controladorServicio@index');
+Route::resource('servicio','controladorServicio');
 
-//Route::resource('habitacion','controladorHabitacion');
+
+//controlador tipo de habitaciones
+Route::get('registroTipoHabitacion','controladorTipoHabitacion@index');
+Route::resource('tipoHabitacion','controladorTipoHabitacion');
+
+//controlador tipo de habitaciones
+Route::get('registroHabitacion','controladorHabitacion@index');
+Route::resource('habitacion','controladorHabitacion');
+

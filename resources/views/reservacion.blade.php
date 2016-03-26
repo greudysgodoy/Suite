@@ -44,25 +44,8 @@
 											</div>
 											<div class="input-group">
 												<input type="text" id="nombre" name="txtNombre">
-												<label class="label" for="nombre">Nombre:</label>												
-											</div>
-								  		</div>
-								  	</div>							  	
-								  </div>
-								  <div class="left2" >
-								  	<div class="panel panel-default">
-								  		<div class="panel-heading">
-								  			<h4>Cantidad de huespédes</h4>
-								  		</div>	
-								  		<div class="panel-body">
-								  			<div class="input-group">										
-												<input type="text" id="aReservar" name="txtNumHuespedes"> 
-												<label class="label" for="aReservar">A Reservar:</label>									
-											</div>
-											<div class="input-group">
-												<input type="text" id="sinAsignar" name="txtSinAsignar"> 
-												<label class="label" for="sinAsignar">Sin Asignar:</label>											
-											</div>
+												<label class="label" for="nombre">Nombre:</label>						
+											</div>											
 								  		</div>
 								  	</div>							  	
 								  </div>
@@ -90,7 +73,7 @@
 								 <div class="left2" >
 								 	<div class="panel panel-default">
 								  		<div class="panel-heading">
-								  			<h4>Registrod de Huespédes</h4>
+								  			<h4>Registro de Huéspedes</h4>
 								  		</div>	
 								  		<div class="panel-body">
 								  			<div class="input-group">
@@ -99,26 +82,30 @@
 											</div>
 											<div class="input-group">
 												<input type="text" id="nombreHuesped" name="txtNombreHuesped">
-												<label class="label" for="nombreHuesped">Nombre:</label>						
+												<label class="label" for="nombreHuesped">Nombre:</label>					
 											</div>
+											<div class="input-group">
+												<input type="text" id="apellidoHuesped" name="txtApellidoHuesped">
+												<label class="label" for="apellidoHuesped">Apellido:</label>					
+											</div>											
 											<div class="input-group">
 												<input type="date" id="fechaHuesped" name="txtFechaHuesped">
 												<label class="label" for="fechaHuesped">Fecha de nacimiento:</label>						
 											</div>											
-	  										<input style="width: 25%" type="reset" name="btn_agregar" value="Agregar">
+	  										<input style="width: 30%" type="reset" name="btn_agregar" value="Agregar">
 	  									</div>
 	  								</div>								  	
 								 </div>							  	
 								  	<div class="right2" >
 									 	 <div class="panel panel-default">
 									  		<div class="panel-heading">
-									  			<h4>Huespuedes Asignados</h4>
+									  			<h4>Huéspedes Asignados</h4>
 									  		</div>
 									  		<div class="panel-body">
 									  			<table  class="form-control">
 													<tr>
-												      <th width="50%" scope="col">Huesped</th>
-												      <th width="50%" scope="col">Habitacion</th>
+												      <th width="50%" scope="col">Huésped</th>
+												      <th width="50%" scope="col">Habitación</th>
 												    </tr>
 												    <tr>
 												      <td>&nbsp;</td>
@@ -140,7 +127,8 @@
 									  		</div>
 										  </div>
 									</div>
-									<div> 
+									<br>
+									<div class="left" style="width: 50%;margin-top: 5%;"> 
 										<input style="width: 25%" type="reset" name="btn_cancelar" value="Cancelar">
 										<input style="width: 25%; margin-top: 200px" type="submit" name="btn_aceptar" value="Aceptar">			
 									</div>	

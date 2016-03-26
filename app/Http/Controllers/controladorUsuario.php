@@ -15,7 +15,7 @@ class controladorUsuario extends Controller
      */
     public function index()
     {
-        //
+         return view('usuario.create');
     }
 
     /**
@@ -44,7 +44,7 @@ class controladorUsuario extends Controller
             'telefono' => $request['txtTelefono'],
             'email' => $request['email'],
             'fechaNacimiento' => $request['fechaNacimiento'],
-            'codigoRol' => $request['radio'],
+            'codigoRol' => $request['radioRol'],
             'password' => $request['contraseña'],
             'estatus' => '1',
 

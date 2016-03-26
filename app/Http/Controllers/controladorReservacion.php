@@ -15,7 +15,7 @@ class controladorReservacion extends Controller
      */
     public function index()
     {
-        return view('reservacion');
+        return view('registroHabitacion',compact('tipohabitacions'));
     }
 
     /**
@@ -45,9 +45,10 @@ class controladorReservacion extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($codigo)
     {
-        //
+       $cliente = DB::table('reservacion')->where('codigoCliente', $codigo['txtCodigo'])->first();
+       
     }
 
     /**

@@ -9,7 +9,7 @@ Route::get('checkOut','controladorVistas@checkOut');
 
 //Route::get('registroTipoHabitacion','controladorVistas@registroTipoHabitacion');
 
-Route::get('checkIn','controladorVistas@checkIn');
+/*Route::get('checkIn','controladorVistas@checkIn');*/
 
 Route::get('reporteDisponibilidad','controladorVistas@reporteDisponibilidad');
 
@@ -63,7 +63,9 @@ Route::get('registroHabitacion','controladorHabitacion@index');
 Route::resource('habitacion','controladorHabitacion');
 
 //controlador de no se que es pero estan dando conflicto
-Route::resource('cliente','controladorCliente@create');
+Route::get('resgistroCliente','controladorCliente@index');
+Route::resource('usuario','controladorUsuario');
+Route::resource('cliente', 'controladorCliente');
 
-Route::resource('usuario','controladorUsuario@create');
+Route::resource('checkIn','controladorCheckIn');
 

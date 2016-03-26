@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\habitacion;
+use App\tipohabitacion;
+use App\reservacion;
+use App\cliente;
+use Session;
+use Redirect;
+
 class controladorCheckIn extends Controller
 {
     /**
@@ -15,7 +22,22 @@ class controladorCheckIn extends Controller
      */
     public function index()
     {
-        return view('checkIn'); 
+        /*$reservacion = reservacion::get()->where('codCliente', '21244015')->first();
+        $registro = var_dump($reservacion->fechaInicio);*/
+
+       /* $registro = reservacion::get('fechaIngreso')->where('codCliente', '21244015')->first();*/
+
+        /*$registro = DB::table('reservacion')->where('codCliente', '21244015')->first();
+
+        var_dump($registro->codCliente;
+       
+        /*$tipohabitacions = tipohabitacion::lists('descripcion','codigo');
+        return view('checkin',compact('registro'));*/
+        $nombre = '---';
+        $codigo = '---';
+        $fechaIngreso = '---';
+        $fechaSalida = '---';
+        return view('checkin',compact('codigo','nombre'),compact('fechaIngreso','fechaSalida'));
     }
 
     /**
@@ -25,7 +47,7 @@ class controladorCheckIn extends Controller
      */
     public function create()
     {
-        return view('checkIn.create'); 
+        return "hola create";
     }
 
     /**
@@ -36,8 +58,26 @@ class controladorCheckIn extends Controller
      */
     public function store(Request $request)
     {
-        //
+            if(isset($request["buscar"]))
+            {
+                $codigo = $request['txtCodigo'];
+                $tabla = reservacion::find($codigo);
+                $fechaIngreso = $tabla->fechaIngreso;
+                $fechaSalida = $tabla->fechaSalida;
+                $codigoCliente = $tabla->codigoCliente;
+
+                $tabla2 = cliente::find($codigoCliente);
+                $nombre = $tabla2->nombre;
+
+                          
+            }
+
+
+
+           return view('checkin',compact('codigo','nombre'),compact('fechaIngreso','fechaSalida'));
+
     }
+
 
     /**
      * Display the specified resource.
@@ -47,7 +87,7 @@ class controladorCheckIn extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**

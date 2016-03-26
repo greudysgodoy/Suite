@@ -2,6 +2,8 @@
 @extends('templates.templateGerente')
 
 @section('content')
+
+
 <div align="center">	
 	<div class="panel panel-default" style="width: 50%">
 		<div class="panel-heading" > 
@@ -12,33 +14,31 @@
 					<div class="row">
 						<div class="contenedor-formulario">
 						<br><br><br>
-								<form class="formulario" name="formularios" method="post">
+			{!!Form::open(['route'=>'checkIn.store', 'method'=>'POST', 'class'=>'formulario'])!!}
 									<div>
 								  		<div  class="input-group">  				 	
-											<input type="text" id="codigo" name="codigo">
-											<label class="label" for="codigo">Codigo del cliente</label>
+											<input type="text" id="codigo" name="txtCodigo">
+											<label class="label" for="codigo">Codigo de la reservacion</label>		
+											<input type="submit" value="Buscar" name="buscar">
 										</div>
-										<div class="input-group">	
-											<input type="date" id="fechaEnt" name="fechaEnt">
-											<label class="label" for="fechaEnt">Fecha de Entrada</label>				
-										</div>
-										<div class="input-group">	
-									   		<input type="date" id="fechaSal" name="fechaSal"> 
-									   		<label class="label" for="fechaSal">Fecha de Salida</label>
-									   	</div>
-										<div class="input-group">
-											<input type="text" id="cantHuesp" name="cantHuesp" >
-											<label class="label" for="cantHuesp">Cantidad de Huespedes</label>
-										</div>
-										<div class="input-group">					
-											<input type="text" id="cantHabit" name="cantHabit">
-											<label class="label" for="cantHabit">Cantidad de Habitaciones</label>
-										</div>
-										<input id="btn-reset" type="reset" value="Cancelar">
-								  		<input id="btn-submit" type="submit" value="Procesar">
+									</div>							
+								<div>
+									<div class="input-group">	
+								   		<input type="text" id="nombre" name="txtNombre" value={{$nombre}}> 
+								   		<label class="label" for="nombre">Nombre del cliente</label>
+								   	</div>								
+									<div class="input-group">	
+										<input type="text" id="fechaEnt" name="fechaEntrada" value={{$fechaSalida}}> 
+										<label class="label" for="fechaEntrada">Fecha de Entrada</label>			
 									</div>
-
-							 	</form>
+									<div class="input-group">	
+								   		<input type="text" id="fechaSal" name="fechaSal" value={{$fechaSalida}}> 
+								   		<label class="label" for="fechaSalida">Fecha de Salida</label>
+								   	</div>
+									<input id="btn-reset" type="reset" value="Cancelar">
+							  		<input id="btnProcesar" type="submit" name="procesarCheck"value="Procesar">
+								</div>';
+			{!!Form::close()!!}
 							</div>
 						</div>
 					</div>
